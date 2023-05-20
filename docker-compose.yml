@@ -22,9 +22,10 @@ services:
       - 5432:5432
     environment:
       - POSTGRES_USER=postgres
-      - PG_PASSWORD=postgres
+      - POSTGRES_PASSWORD=postgres
       - PG_DB=postgres
     volumes:
-      - pgdata:/var/lib/postgresql:data
+      - pgdata:/var/lib/postgresql/data
+
 volumes:
   pgdata: {}
